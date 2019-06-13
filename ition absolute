@@ -1,0 +1,165 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 906d3fd..0d55b23 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -11,96 +11,14 @@[m
+ 	<script src="Knn_classifier.js"></script>[m
+ 	 <link href="googleaps.css" rel="stylesheet">[m
+ 	[m
+[31m-       <link rel="stylesheet" href="Bootstrap.css">[m
+[32m+[m[32m     <link rel="stylesheet" href="Bootstrap.css">[m
+   <script src="Bootstrap1.js"></script>[m
+   <script src="Bootstrap2.js"></script>[m
+       <link rel="stylesheet" href="style.css">[m
+       <link href="https://www.miraclesoft.com/images/favicon.ico" rel="shortcut icon">[m
+   </head>[m
+     <title>Miracle Software Systems</title>[m
+[31m-  <style>[m
+[31m-      .vid{[m
+[31m-          position: absolute;[m
+[31m-          left: 60%;[m
+[31m-          top:11.8%;[m
+[31m-      }[m
+[31m-      img{[m
+[31m-      width: 17%;[m
+[31m-          height: 11%;[m
+[31m-          position: absolute;[m
+[31m-          left: 3%;[m
+[31m-      }[m
+[31m-      body{[m
+[31m-          <!--background-image: url("Background_image/alexa_back5.jpg"); [m
+[31m-          background-repeat: no-repeat;-->[m
+[31m-          height : 95%;[m
+[31m-          width : 95%;[m
+[31m-      }[m
+[31m-	  .speechtotext{[m
+[31m-		position:absolute;[m
+[31m-          top: 60%;[m
+[31m-	  }[m
+[31m-      .btn{[m
+[31m-          position: absolute;[m
+[31m-          top: 40%;[m
+[31m-          left: 50%;[m
+[31m-          [m
+[31m-      }[m
+[31m-      #class-b{[m
+[31m-          margin-top: 37px;[m
+[31m-      }[m
+[31m-      #class-c{[m
+[31m-          margin-top: 74px;[m
+[31m-      }[m
+[31m-      #class-d{[m
+[31m-          margin-top: 111px;[m
+[31m-      }[m
+[31m-      #class-e{[m
+[31m-          margin-top: 148px;[m
+[31m-      }[m
+[31m-      #txtInput{[m
+[31m-          position: absolute;[m
+[31m-          top: 40%;[m
+[31m-          left: 2%;[m
+[31m-          width: 45%;[m
+[31m-          height: 19%;[m
+[31m-          color: black;[m
+[31m-          font-size: 30px;[m
+[31m-      }[m
+[31m-      #btnSpeak{[m
+[31m-          position: absolute;[m
+[31m-          top: 60%;[m
+[31m-          left: 8%;[m
+[31m-          background-color: #1F618D  ;[m
+[31m-      }[m
+[31m-      .header{[m
+[31m-        width: 105.2%;[m
+[31m-          height: 12%;[m
+[31m-          text-align: center;[m
+[31m-          background-color: black;[m
+[31m-          color: blueviolet;[m
+[31m-          padding-top: none;[m
+[31m-      }[m
+[31m-      .p3{[m
+[31m-                font-family: 'Montserrat', sans-serif;[m
+[31m-                font-size: 200%;[m
+[31m-                color:#85C1E9;[m
+[31m-          padding-top: 2%;[m
+[31m-          position: absolute;[m
+[31m-          left: 30%;[m
+[31m-            }[m
+[31m-      .footr{[m
+[31m-          text-align: center;[m
+[31m-          position: absolute;[m
+[31m-          top: 95%;[m
+[31m-          width: 100%;[m
+[31m-          height: 5%;[m
+[31m-          font-size: 18px;[m
+[31m-          background-color: black;[m
+[31m-          color: #85C1E9;[m
+[31m-      }[m
+[31m-      [m
+[31m-  </style>[m
+[32m+[m[32m    <link rel="stylesheet" type="text/css" href="index.css">[m
+   <body>[m
+       <div class="header">[m
+           <img src="Background_image/miracle-logo-light.png" >[m
+[36m@@ -127,11 +45,11 @@[m
+       [m
+  <!-- Adding examples button creation code -->[m
+       <div class="container">[m
+[31m-	   <button type="button" id="class-a" class="btn btn-primary">Add A</button>[m
+[31m-	   <button type="button" id="class-b" class="btn btn-primary">Add B</button>[m
+[31m-	   <button type="button" id="class-c" class="btn btn-primary">Add C</button>[m
+[31m-	   <button type="button" id="class-d" class="btn btn-primary">Add D</button>[m
+[31m-	   <button type="button" id="class-e" class="btn btn-primary">Add E</button>[m
+[32m+[m	[32m   <button type="button" id="class-a" class="btn btn-primary">Add Alexa</button>[m
+[32m+[m	[32m   <button type="button" id="class-b" class="btn btn-primary">Add Time</button>[m
+[32m+[m	[32m   <button type="button" id="class-c" class="btn btn-primary">Add Weather</button>[m
+[32m+[m	[32m   <button type="button" id="class-d" class="btn btn-primary">Add Hobby</button>[m
+[32m+[m	[32m   <button type="button" id="class-e" class="btn btn-primary">Add Music</button>[m
+       </div>[m
+       [m
+  <!-- Speech to text frontend code -->[m
+[36m@@ -156,42 +74,6 @@[m
+         <script src="index.js"></script>[m
+       [m
+  <!--Text to speech Javascript code -->  [m
+[31m-      <script>[m
+[31m-	   var voiceList=document.querySelector('#voiceList');[m
+[31m-	   var txtInput=document.querySelector('#txtInput');[m
+[31m-	   var btnSpeak=document.querySelector('#btnSpeak');[m
+[31m-	   [m
+[31m-	   var tts = window.speechSynthesis;[m
+[31m-	   var voices = [];[m
+[31m-	   [m
+[31m-	   GetVoices();[m
+[31m-	   if(speechSynthesis !== undefined){[m
+[31m-	   	speechSynthesis.onvoiceschanged = GetVoices;[m
+[31m-	   }[m
+[31m-	   [m
+[31m-	   btnSpeak.addEventListener('click',()=>{[m
+[31m-	   	var toSpeak = new SpeechSynthesisUtterance(txtInput.value);[m
+[31m-	   	var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');[m
+[31m-	   	voices.forEach((voice)=>{[m
+[31m-			if(voice.name === selectedVoiceName){[m
+[31m-				toSpeak.voice = voice;[m
+[31m-			}[m
+[31m-		}); [m
+[31m-		tts.speak(toSpeak);[m
+[31m-	   });[m
+[31m-	[m
+[31m-	   function GetVoices(){[m
+[31m-		  voices = tts.getVoices();[m
+[31m-		voiceList.innerHTML = '';[m
+[31m-		  voices.forEach((voice)=>{[m
+[31m-			 var listItem = document.createElement('option');[m
+[31m-			 listItem.textContent = voice.name;[m
+[31m-			 listItem.setAttribute('data-lang', voice.lang);[m
+[31m-			 listItem.setAttribute('data-name', voice.name);[m
+[31m-			 voiceList.appendChild(listItem);[m
+[31m-		  });[m
+[31m-		  voiceList.selectedIndex = 0;[m
+[31m-	   }	[m
+[31m-	 </script>[m
+[32m+[m[32m      <script src = "text_to_speech.js"></script>[m
+   </body>[m
+ </html>[m
+\ No newline at end of file[m

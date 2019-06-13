@@ -1,0 +1,80 @@
+body{   
+    height : 95%;
+    width : 95%;
+}
+.speechtotext{
+  /* position:absolute; */
+    top: 60%;
+}
+.btn{
+    /* position: absolute; */
+    top: 40%;
+    left: 50%;
+    
+}
+#class-b{
+    margin-top: 37px;
+}
+#class-c{
+    margin-top: 74px;
+}
+#class-d{
+    margin-top: 111px;
+}
+#class-e{
+    margin-top: 148px;
+}
+#txtInput{
+    top: 40%;
+    left: 2%;
+    width: 45%;
+    height: 19%;
+    color: black;
+    font-size: 30px;
+}
+#btnSpeak{
+
+    top: 60%;
+    left: 8%;
+    background-color: #1F618D  ;
+}
+.header{
+  width: 105.2%;
+    height: 12%;
+    text-align: center;
+    background-color: black;
+    color: blueviolet;
+    padding-top: none;
+}
+.p3{
+          font-family: 'Montserrat', sans-serif;
+          font-size: 200%;
+          color:#85C1E9;
+    padding-top: 2%;
+    position: absolute;
+    left: 30%;
+      }
+.footr{
+    text-align: center;
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    height: 5%;
+    font-size: 18px;
+    background-color: black;
+    color: #85C1E9;
+}
+
+.vid{
+    position: absolute;
+    left: 60%;
+    top:11.8%;
+    }
+img{
+width: 17%;
+    height: 11%;
+    position: absolute;
+    left: 3%;
+}
+
+#textarea { font-size: 10px; }

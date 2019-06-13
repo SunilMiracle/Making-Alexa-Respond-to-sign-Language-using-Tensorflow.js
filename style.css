@@ -3,8 +3,7 @@
   color: #f2efe2;
   font-size: 16px;
 }
- 
- 
+  
 button:focus {
     outline: 0;
 }

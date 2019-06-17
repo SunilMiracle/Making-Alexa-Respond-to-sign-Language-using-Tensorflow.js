@@ -12,17 +12,20 @@ body{
     left: 50%;
     
 }
+#class-a{
+    margin-top: 10px;
+}
 #class-b{
-    margin-top: 37px;
+    margin-top: 10px;
 }
 #class-c{
-    margin-top: 74px;
+    margin-top: 10px;
 }
 #class-d{
-    margin-top: 111px;
+    margin-top: 10px;
 }
 #class-e{
-    margin-top: 148px;
+    margin-top: 10px;
 }
 #txtInput{
     top: 40%;

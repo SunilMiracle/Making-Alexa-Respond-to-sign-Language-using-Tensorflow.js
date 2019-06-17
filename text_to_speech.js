@@ -20,6 +20,7 @@ btnSpeak.addEventListener('click',()=>{
          toSpeak.voice = voice;
      }
  }); 
+ toSpeak.rate = 0.8;
  tts.speak(toSpeak);
 });
 
